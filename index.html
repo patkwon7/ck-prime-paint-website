@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CK Prime Paint — House Painter Epping & Ryde | Sydney</title>
+    <meta name="description" content="Licensed, fully insured house painters in Epping and the Ryde district. Interior, exterior, roof and pre-sale repaints — meticulous prep, tidy worksites, free quotes. ★ 5.0 on Google.">
+    <meta property="og:title" content="CK Prime Paint — House Painter Epping & Ryde | Sydney">
+    <meta property="og:description" content="Licensed, fully insured house painters in Epping and the Ryde district. Interior, exterior, roof and pre-sale repaints — meticulous prep, tidy worksites, free quotes. ★ 5.0 on Google.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ckprimepaint.com.au">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333333;
+            line-height: 1.6;
+            background: #ffffff;
+        }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; }
+        h1 { font-size: 48px; line-height: 1.2; }
+        h2 { font-size: 28px; line-height: 1.2; margin-bottom: 24px; }
+        h3 { font-size: 24px; line-height: 1.2; }
+        p { font-size: 16px; margin-bottom: 16px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #ffffff;
+            border-bottom: 1px solid #f5f5f5;
+            box-shadow: 0 2px 4px rgba(0, 51, 102, 0.1);
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+        }
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+        .header-right {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #003366;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background 0.3s ease;
+        }
+        .cta-button:hover { background: #001F40; }
+        .cta-secondary {
+            background: transparent;
+            color: #003366;
+            border: 2px solid #003366;
+            padding: 10px 22px;
+        }
+        .cta-secondary:hover { background: #f5f5f5; }
+        .kakao-btn {
+            background: #FFE812;
+            color: #000000;
+            padding: 10px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: opacity 0.3s ease;
+        }
+        .kakao-btn:hover { opacity: 0.9; }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.5), rgba(0, 51, 102, 0.5)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23e8e8e8" width="1200" height="600"/><text x="50%" y="50%" font-size="48" fill="%23999" text-anchor="middle" dominant-baseline="middle">Before/After Photo</text></svg>');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            padding: 80px 24px;
+            text-align: center;
+        }
+        .hero h1 {
+            margin-bottom: 16px;
+            color: #ffffff;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 32px;
+            color: #ffffff;
+        }
+        .hero-ctas {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .trust-strip {
+            background: rgba(255, 255, 255, 0.95);
+            color: #333333;
+            padding: 20px 24px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 32px;
+            display: inline-block;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .trust-strip p {
+            margin: 0;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0 12px;
+        }
+        .star { color: #FFB800; }
+        
+        /* Services */
+        .services {
+            padding: 60px 24px;
+            background: #ffffff;
+        }
+        .services h2 { text-align: center; margin-bottom: 48px; }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+        .service-card {
+            background: #ffffff;
+            border: 1px solid #CCCCCC;
+            padding: 32px 24px;
+            border-radius: 4px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 51, 102, 0.08);
+            transition: box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 51, 102, 0.12);
+        }
+        .service-icon {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+        .service-card h3 {
+            margin-bottom: 12px;
+        }
+        .service-card p {
+            font-size: 14px;
+            margin: 0;
+        }
+        
+        /* Gallery */
+        .gallery {
+            padding: 60px 24px;
+            background: #F5F5F5;
+        }
+        .gallery h2 { text-align: center; margin-bottom: 48px; }
+        .gallery-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .before-after-slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .before-after-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 18px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+        }
+        .before-after-image.before::before {
+            content: 'Before Photo';
+        }
+        .before-after-image.after::before {
+            content: 'After Photo';
+        }
+        
+        /* About */
+        .about {
+            padding: 60px 24px;
+            background: #ffffff;
+        }
+        .about .container { max-width: 800px; }
+        .about h2 { margin-bottom: 32px; }
+        .about p { margin-bottom: 16px; }
+        
+        /* Reviews */
+        .reviews {
+            padding: 60px 24px;
+            background: #F5F5F5;
+        }
+        .reviews h2 { text-align: center; margin-bottom: 48px; }
+        .review-badge {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .stars {
+            font-size: 32px;
+            color: #FFB800;
+            margin-bottom: 8px;
+        }
+        .review-text {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
+        }
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .review-card {
+            background: #F5F5F5;
+            border-left: 4px solid #003366;
+            padding: 24px;
+            border-radius: 4px;
+        }
+        .review-card p {
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        .review-author {
+            font-weight: 600;
+            font-size: 14px;
+            color: #003366;
+            margin: 0;
+        }
+        .review-btn {
+            display: block;
+            margin-top: 32px;
+            text-align: center;
+        }
+        
+        /* Service Area */
+        .service-area {
+            padding: 60px 24px;
+            background: #ffffff;
+        }
+        .service-area h2 { text-align: center; margin-bottom: 32px; }
+        .service-area p { text-align: center; margin-bottom: 24px; }
+        .suburbs-list {
+            background: #F5F5F5;
+            padding: 24px;
+            border-radius: 4px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .suburbs-list p {
+            font-size: 14px;
+            line-height: 1.8;
+            margin: 0;
+        }
+        
+        /* Form */
+        .quote-form {
+            padding: 60px 24px;
+            background: #F5F5F5;
+        }
+        .form-card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 2px 8px rgba(0, 51, 102, 0.08);
+        }
+        .form-card h2 {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .form-intro {
+            text-align: center;
+            margin-bottom: 32px;
+            font-size: 14px;
+            color: #666;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #333333;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #CCCCCC;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #333333;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border: 2px solid #003366;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .form-submit {
+            width: 100%;
+            padding: 14px 32px;
+            background: #003366;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .form-submit:hover { background: #001F40; }
+        .form-reassurance {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin-top: 16px;
+        }
+        .form-ctas {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+        .form-ctas a, .form-ctas button {
+            flex: 1;
+        }
+        .kakao-form-btn {
+            background: #FFE812;
+            color: #000000;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+        .kakao-form-btn:hover { opacity: 0.9; }
+        
+        /* Footer */
+        footer {
+            background: #003366;
+            color: #ffffff;
+            padding: 40px 24px;
+        }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 32px;
+        }
+        .footer-section h3 {
+            color: #ffffff;
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+        .footer-section p {
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        .footer-section a {
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 24px;
+            text-align: center;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            h1 { font-size: 36px; }
+            h2 { font-size: 24px; }
+            .header-right { flex-wrap: wrap; gap: 8px; }
+            .cta-button, .cta-secondary { padding: 10px 16px; font-size: 12px; }
+            .hero { padding: 48px 24px; }
+            .hero p { font-size: 16px; }
+            .hero-ctas { flex-direction: column; }
+            .services, .reviews, .gallery, .about, .service-area, .quote-form {
+                padding: 40px 24px;
+            }
+            .form-card { padding: 24px; }
+            .footer-content { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="logo-05.png" alt="CK Prime Paint">
+            </div>
+            <div class="header-right">
+                <a href="tel:0404131984" class="cta-secondary">Call 0404 131 984</a>
+                <a href="https://open.kakao.com/" class="kakao-btn" target="_blank">📱 카톡</a>
+                <a href="#quote-form" class="cta-button">Get a Free Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Epping's meticulous house painters — done right, left spotless.</h1>
+            <p>Licensed and fully insured residential painting across Epping, Ryde and the North Shore. Free, no-obligation quotes — usually same day.</p>
+            <div class="hero-ctas">
+                <a href="#quote-form" class="cta-button">Get a Free Quote</a>
+                <a href="tel:0404131984" class="cta-button cta-secondary">Call 0404 131 984</a>
+            </div>
+            <div class="trust-strip">
+                <p>
+                    <span class="trust-badge">
+                        <span class="star">★</span>
+                        <span>5.0</span>
+                    </span>
+                    <span class="trust-badge">
+                        <span>✓ Fully Insured</span>
+                    </span>
+                    <span class="trust-badge">
+                        <span>📍 Epping Local</span>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Interior Painting</h3>
+                    <p>Walls, ceilings, trim and doors, prepped properly and finished clean.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏘️</div>
+                    <h3>Exterior Painting</h3>
+                    <p>Weather-ready coatings that protect and lift your home's street appeal.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛖</div>
+                    <h3>Roof Painting</h3>
+                    <p>Restore and protect your roof with durable, professional coatings.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚪</div>
+                    <h3>Fences & Decks</h3>
+                    <p>Timber and fencing brought back to life and built to last.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Pre-Sale & End-of-Lease</h3>
+                    <p>Fast, tidy refreshes that help homes lease and sell. Agents welcome.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="container">
+            <h2>Before & After</h2>
+            <div class="gallery-container">
+                <div class="before-after-slider">
+                    <div class="before-after-image before"></div>
+                    <div class="before-after-image after"></div>
+                </div>
+                <p style="text-align: center; font-size: 14px; color: #666;">
+                    Drag or tap to compare. More photos coming soon.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+        <div class="container">
+            <h2>Why CK Prime Paint</h2>
+            <p>CK Prime Paint is a licensed, fully insured residential painting business based in Epping, serving the Ryde district and North Shore. We specialise in interior and exterior repaints, with meticulous preparation and a clean, tidy worksite from the first drop sheet to the final coat. Every job is backed by public liability insurance, and we provide free, no-obligation on-site quotes. We treat your home like our own — on time, on budget, and finished to a standard we're proud to put our name to.</p>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="review-badge">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">5.0 out of 5 on Google (7 reviews)</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p>"Fantastic work. Meticulous attention to detail. Highly recommended."</p>
+                    <p class="review-author">— Sarah M.</p>
+                </div>
+                <div class="review-card">
+                    <p>"Professional, reliable, and the finish is spotless. Will use again."</p>
+                    <p class="review-author">— James K.</p>
+                </div>
+                <div class="review-card">
+                    <p>"Local, honest, and they treat your home with care. Worth every cent."</p>
+                    <p class="review-author">— Emma T.</p>
+                </div>
+            </div>
+            <div class="review-btn">
+                <a href="https://google.com" class="cta-button" target="_blank">See All Reviews on Google</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area -->
+    <section class="service-area">
+        <div class="container">
+            <h2>Service Area</h2>
+            <p>We specialise in the Epping and Ryde district across the North Shore.</p>
+            <div class="suburbs-list">
+                <p>Epping · North Epping · Eastwood · Marsfield · Denistone East · Carlingford · Beecroft · Cheltenham · Ryde · West Ryde · North Ryde · Macquarie Park · Dundas Valley · Ermington · Meadowbank · Pennant Hills · West Pennant Hills · Chatswood · Killara · Turramurra</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form -->
+<section class="quote-form" id="quote-form">
+    <div class="container">
+        <div class="form-card">
+            <h2>Get a Free Quote</h2>
+            <p class="form-intro">Tell us about your project — usually same-day response, free, no obligation.</p>
+            
+            <div class="form-ctas">
+                <a href="tel:0404131984" class="cta-button">Call 0404 131 984</a>
+                <button class="kakao-form-btn" onclick="window.open('https://open.kakao.com/', '_blank')">📱 카카오톡</button>
+            </div>
+            
+            <form action="https://formspree.io/f/xbdvdjql" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="suburb">Suburb *</label>
+                    <select id="suburb" name="suburb" required>
+                        <option value="">Select a suburb...</option>
+                        <option value="Epping">Epping</option>
+                        <option value="North Epping">North Epping</option>
+                        <option value="Eastwood">Eastwood</option>
+                        <option value="Marsfield">Marsfield</option>
+                        <option value="Carlingford">Carlingford</option>
+                        <option value="Ryde">Ryde</option>
+                        <option value="West Ryde">West Ryde</option>
+                        <option value="North Ryde">North Ryde</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="job-type">Job Type *</label>
+                    <select id="job-type" name="job_type" required>
+                        <option value="">Select a job type...</option>
+                        <option value="Interior">Interior Painting</option>
+                        <option value="Exterior">Exterior Painting</option>
+                        <option value="Roof">Roof Painting</option>
+                        <option value="Fences">Fences & Decks</option>
+                        <option value="Pre-Sale">Pre-Sale Repaint</option>
+                        <option value="End-of-Lease">End-of-Lease</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tell us about your project *</label>
+                    <textarea id="message" name="message" required placeholder="Describe your painting project..."></textarea>
+                </div>
+                <button type="submit" class="form-submit">Get Your Free Quote</button>
+                <p class="form-reassurance">Privacy protected. We'll only use this to contact you about your quote.</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: <a href="tel:0404131984">0404 131 984</a></p>
+                <p>Hours: 8am – 7pm</p>
+                <p>Location: Epping NSW 2121</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <a href="https://google.com" target="_blank">Google Business Profile</a>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://open.kakao.com/" target="_blank">카카오톡 (KakaoTalk)</a>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <a href="#privacy">Privacy Policy</a>
+                <p style="font-size: 12px; margin-top: 16px;">ABN: [ABN]<br>Fully Insured</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CK Prime Paint. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "CK Prime Paint",
+        "image": "logo-05.png",
+        "description": "Licensed, fully insured house painters in Epping and the Ryde district.",
+        "url": "https://ckprimepaint.com.au",
+        "telephone": "0404131984",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Epping",
+            "addressLocality": "Epping",
+            "addressRegion": "NSW",
+            "postalCode": "2121",
+            "addressCountry": "AU"
+        },
+        "priceRange": "$$",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "08:00",
+            "closes": "19:00"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "7"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Epping, Ryde, North Shore Sydney"
+        },
+        "sameAs": [
+            "https://google.com",
+            "https://facebook.com"
+        ]
+    }
+    </script>
+
+    <!-- Sitemap.xml reference -->
+    <!-- Generate sitemap.xml separately or add robots.txt reference -->
+
+</body>
+</html>
