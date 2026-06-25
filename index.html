@@ -3,477 +3,610 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CK Prime Paint — House Painter Epping & Ryde | Sydney</title>
-    <meta name="description" content="Licensed, fully insured house painters in Epping and the Ryde district. Interior, exterior, roof and pre-sale repaints — meticulous prep, tidy worksites, free quotes. ★ 5.0 on Google.">
-    <meta property="og:title" content="CK Prime Paint — House Painter Epping & Ryde | Sydney">
-    <meta property="og:description" content="Licensed, fully insured house painters in Epping and the Ryde district. Interior, exterior, roof and pre-sale repaints — meticulous prep, tidy worksites, free quotes. ★ 5.0 on Google.">
+    <title>CK Prime Paint – House Painters Epping & Ryde | Sydney</title>
+    <meta name="description" content="Fully insured house painters in Epping and the Ryde district. Interior, exterior, roof and pre-sale repaints – meticulous prep, tidy worksites, free quotes. ★ 5.0 on Google.">
+    <meta property="og:title" content="CK Prime Paint – House Painters Epping & Ryde | Sydney">
+    <meta property="og:description" content="Fully insured house painters in Epping and the Ryde district. Interior, exterior, roof and pre-sale repaints – meticulous prep, tidy worksites, free quotes. ★ 5.0 on Google.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ckprimepaint.com.au">
     <meta name="twitter:card" content="summary_large_image">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; }
         body {
             font-family: 'Inter', sans-serif;
+            font-weight: 400;
             color: #333333;
             line-height: 1.6;
             background: #ffffff;
         }
+
+        /* Typography */
         h1, h2, h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; }
-        h1 { font-size: 48px; line-height: 1.2; }
-        h2 { font-size: 28px; line-height: 1.2; margin-bottom: 24px; }
-        h3 { font-size: 24px; line-height: 1.2; }
-        p { font-size: 16px; margin-bottom: 16px; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-        
-        /* Header */
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: #ffffff;
-            border-bottom: 1px solid #f5f5f5;
-            box-shadow: 0 2px 4px rgba(0, 51, 102, 0.1);
-        }
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 24px;
-        }
-        .logo img {
-            height: 40px;
-            width: auto;
-        }
-        .header-right {
-            display: flex;
-            gap: 16px;
-            align-items: center;
-        }
-        .cta-button {
+        h1 { font-size: 44px; line-height: 1.15; }
+        h2 { font-size: 34px; line-height: 1.2; }
+        h3 { font-size: 24px; line-height: 1.3; }
+        p  { font-size: 20px; line-height: 1.75; }
+
+        /* Layout */
+        .container { max-width: 1320px; margin: 0 auto; padding: 0 40px; }
+
+        /* Buttons */
+        .btn {
             display: inline-block;
             padding: 12px 24px;
-            background: #003366;
-            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
             text-decoration: none;
             border-radius: 4px;
-            font-weight: 600;
-            font-size: 14px;
-            transition: background 0.3s ease;
+            cursor: pointer;
+            border: none;
         }
-        .cta-button:hover { background: #001F40; }
-        .cta-secondary {
+        .btn-primary {
+            background: #003366;
+            color: #ffffff;
+        }
+        .btn-outline {
             background: transparent;
             color: #003366;
             border: 2px solid #003366;
             padding: 10px 22px;
         }
-        .cta-secondary:hover { background: #f5f5f5; }
-        .kakao-btn {
+        .btn-kakao {
             background: #FFE812;
             color: #000000;
-            padding: 10px 16px;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: 600;
-            font-size: 12px;
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            transition: opacity 0.3s ease;
+            font-size: 13px;
         }
-        .kakao-btn:hover { opacity: 0.9; }
-        
-        /* Hero */
+
+        /* ── TOP BAR ── */
+        .top-bar {
+            background: #003366;
+            color: rgba(255,255,255,0.9);
+            text-align: center;
+            padding: 8px 24px;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+        }
+
+        /* ── HEADER ── */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: #003366;
+            border-bottom: 1px solid #002244;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 24px;
+            max-width: 1320px;
+            margin: 0 auto;
+        }
+        .logo img { height: 140px; width: auto; display: block; }
+        .header-actions { display: flex; align-items: center; gap: 12px; }
+
+        /* ── HERO ── */
         .hero {
-            background: linear-gradient(rgba(0, 51, 102, 0.5), rgba(0, 51, 102, 0.5)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23e8e8e8" width="1200" height="600"/><text x="50%" y="50%" font-size="48" fill="%23999" text-anchor="middle" dominant-baseline="middle">Before/After Photo</text></svg>');
-            background-size: cover;
-            background-position: center;
-            color: #ffffff;
-            padding: 80px 24px;
-            text-align: center;
-        }
-        .hero h1 {
-            margin-bottom: 16px;
-            color: #ffffff;
-        }
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 32px;
-            color: #ffffff;
-        }
-        .hero-ctas {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .trust-strip {
-            background: rgba(255, 255, 255, 0.95);
-            color: #333333;
-            padding: 20px 24px;
-            border-radius: 8px;
-            text-align: center;
-            margin-top: 32px;
-            display: inline-block;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .trust-strip p {
-            margin: 0;
-            font-weight: 600;
-            font-size: 14px;
-        }
-        .trust-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin: 0 12px;
-        }
-        .star { color: #FFB800; }
-        
-        /* Services */
-        .services {
-            padding: 60px 24px;
             background: #ffffff;
-        }
-        .services h2 { text-align: center; margin-bottom: 48px; }
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 32px;
-        }
-        .service-card {
-            background: #ffffff;
-            border: 1px solid #CCCCCC;
-            padding: 32px 24px;
-            border-radius: 4px;
-            text-align: center;
-            box-shadow: 0 2px 8px rgba(0, 51, 102, 0.08);
-            transition: box-shadow 0.3s ease;
-        }
-        .service-card:hover {
-            box-shadow: 0 4px 12px rgba(0, 51, 102, 0.12);
-        }
-        .service-icon {
-            font-size: 32px;
-            margin-bottom: 16px;
-        }
-        .service-card h3 {
-            margin-bottom: 12px;
-        }
-        .service-card p {
-            font-size: 14px;
-            margin: 0;
-        }
-        
-        /* Gallery */
-        .gallery {
-            padding: 60px 24px;
-            background: #F5F5F5;
-        }
-        .gallery h2 { text-align: center; margin-bottom: 48px; }
-        .gallery-container {
-            position: relative;
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .before-after-slider {
-            position: relative;
-            width: 100%;
+            border-bottom: 1px solid #e5e5e5;
             overflow: hidden;
-            border-radius: 8px;
         }
-        .before-after-image {
-            width: 100%;
-            height: 400px;
-            background: linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 18px;
-            border-radius: 8px;
-            margin-bottom: 24px;
-        }
-        .before-after-image.before::before {
-            content: 'Before Photo';
-        }
-        .before-after-image.after::before {
-            content: 'After Photo';
-        }
-        
-        /* About */
-        .about {
-            padding: 60px 24px;
-            background: #ffffff;
-        }
-        .about .container { max-width: 800px; }
-        .about h2 { margin-bottom: 32px; }
-        .about p { margin-bottom: 16px; }
-        
-        /* Reviews */
-        .reviews {
-            padding: 60px 24px;
-            background: #F5F5F5;
-        }
-        .reviews h2 { text-align: center; margin-bottom: 48px; }
-        .review-badge {
-            text-align: center;
-            margin-bottom: 48px;
-        }
-        .stars {
-            font-size: 32px;
-            color: #FFB800;
-            margin-bottom: 8px;
-        }
-        .review-text {
-            font-size: 18px;
-            font-weight: 600;
-            margin: 0;
-        }
-        .reviews-grid {
+        .hero-inner {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
-            max-width: 1000px;
-            margin: 0 auto;
+            grid-template-columns: 1fr 1fr;
+            min-height: 520px;
         }
-        .review-card {
-            background: #F5F5F5;
-            border-left: 4px solid #003366;
-            padding: 24px;
-            border-radius: 4px;
+        .hero-text {
+            padding: 64px 48px 64px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
-        .review-card p {
-            font-size: 16px;
+        .hero-label {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #FFB800;
             margin-bottom: 16px;
+            white-space: nowrap;
         }
-        .review-author {
-            font-weight: 600;
-            font-size: 14px;
+        .hero-text h1 {
             color: #003366;
-            margin: 0;
-        }
-        .review-btn {
-            display: block;
-            margin-top: 32px;
-            text-align: center;
-        }
-        
-        /* Service Area */
-        .service-area {
-            padding: 60px 24px;
-            background: #ffffff;
-        }
-        .service-area h2 { text-align: center; margin-bottom: 32px; }
-        .service-area p { text-align: center; margin-bottom: 24px; }
-        .suburbs-list {
-            background: #F5F5F5;
-            padding: 24px;
-            border-radius: 4px;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .suburbs-list p {
-            font-size: 14px;
-            line-height: 1.8;
-            margin: 0;
-        }
-        
-        /* Form */
-        .quote-form {
-            padding: 60px 24px;
-            background: #F5F5F5;
-        }
-        .form-card {
-            background: #ffffff;
-            padding: 40px;
-            border-radius: 8px;
-            max-width: 600px;
-            margin: 0 auto;
-            box-shadow: 0 2px 8px rgba(0, 51, 102, 0.08);
-        }
-        .form-card h2 {
-            text-align: center;
-            margin-bottom: 16px;
-        }
-        .form-intro {
-            text-align: center;
-            margin-bottom: 32px;
-            font-size: 14px;
-            color: #666;
-        }
-        .form-group {
             margin-bottom: 20px;
         }
+        .hero-text p {
+            color: #555555;
+            font-size: 17px;
+            margin-bottom: 32px;
+        }
+        .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 36px; align-items: center; }
+        .trust-row {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 17px;
+            font-weight: 500;
+            color: #003366;
+        }
+        .trust-item-dot {
+            width: 6px;
+            height: 6px;
+            background: #FFB800;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .hero-photo {
+            position: relative;
+            overflow: hidden;
+            background: #1a1a2e;
+        }
+        /* diagonal chevron on the left edge */
+        .hero-photo::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 80px;
+            height: 100%;
+            background: #ffffff;
+            clip-path: polygon(0 0, 56px 0, 0px 100%, 0 100%);
+            z-index: 3;
+        }
+        /* bottom fade to blend into next section */
+        .hero-photo::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.15));
+            z-index: 3;
+            pointer-events: none;
+        }
+        .hero-slides {
+            position: absolute;
+            inset: 0;
+        }
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 0.9s ease;
+        }
+        .hero-slide.active { opacity: 1; }
+        .hero-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* ── SERVICES ── */
+        .services { padding: 56px 40px; background: #ffffff; }
+        .section-header { margin-bottom: 40px; }
+        .section-header h2 { color: #003366; margin-bottom: 8px; }
+        .section-header p { color: #666666; font-size: 20px; }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .service-card {
+            background: #F5F5F5;
+            padding: 28px 24px;
+            border-top: 3px solid #FFB800;
+        }
+        .service-card h3 {
+            color: #003366;
+            margin-bottom: 16px;
+            font-size: 20px;
+        }
+        .service-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .service-list li {
+            font-size: 17px;
+            color: #333333;
+            padding-left: 14px;
+            position: relative;
+        }
+        .service-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 11px;
+            width: 5px;
+            height: 5px;
+            background: #FFB800;
+            border-radius: 50%;
+        }
+
+        /* ── GALLERY ── */
+        .gallery { padding: 56px 40px; background: #F5F5F5; }
+        .gallery-intro { margin-bottom: 40px; }
+        .gallery-intro h2 { color: #003366; margin-bottom: 8px; }
+        .gallery-intro p { color: #666666; font-size: 20px; }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4px;
+        }
+        .gallery-item { position: relative; overflow: hidden; aspect-ratio: 4/3; }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-note {
+            margin-top: 24px;
+            padding: 16px 20px;
+            background: #ffffff;
+            border-left: 3px solid #FFB800;
+        }
+        .gallery-note p { font-size: 14px; color: #555555; }
+        .gallery-note a { color: #003366; font-weight: 500; }
+
+        /* ── ABOUT ── */
+        .about { padding: 56px 40px; background: #ffffff; }
+        .about-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: start;
+        }
+        .about-text h2 { color: #003366; margin-bottom: 20px; }
+        .about-text p { color: #555555; margin-bottom: 16px; font-size: 17px; }
+        .about-text p:last-child { margin-bottom: 0; }
+        .about-points { display: flex; flex-direction: column; gap: 16px; }
+        .about-point {
+            padding: 20px;
+            background: #F5F5F5;
+            border-left: 3px solid #003366;
+        }
+        .about-point h3 {
+            font-size: 20px;
+            color: #003366;
+            margin-bottom: 4px;
+        }
+        .about-point p { font-size: 14px; color: #666666; }
+
+        /* ── REVIEWS ── */
+        .reviews { padding: 56px 40px; background: #F5F5F5; }
+        .reviews-carousel-wrapper { position: relative; }
+        .reviews-carousel {
+            display: flex;
+            overflow: hidden;
+            scroll-snap-type: x mandatory;
+            gap: 0;
+        }
+        .reviews-carousel .review-card {
+            min-width: 100%;
+            scroll-snap-align: start;
+            box-sizing: border-box;
+        }
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 20px;
+        }
+        .carousel-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            border: none;
+            background: #cccccc;
+            cursor: pointer;
+            padding: 0;
+        }
+        .carousel-dot.active { background: #003366; }
+        .carousel-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+            color: #003366;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+        .carousel-arrow:hover { background: #003366; color: #ffffff; }
+        .carousel-prev { left: -52px; }
+        .carousel-next { right: -52px; }
+        .reviews-header { margin-bottom: 40px; }
+        .reviews-header h2 { color: #003366; margin-bottom: 8px; }
+        .reviews-score {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+        .stars { color: #FFB800; font-size: 20px; letter-spacing: 2px; }
+        .score-text { font-weight: 500; font-size: 20px; color: #333333; }
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .review-card {
+            background: #ffffff;
+            padding: 24px;
+            border-left: 3px solid #003366;
+        }
+        .review-stars { color: #FFB800; font-size: 14px; margin-bottom: 12px; }
+        .review-text { font-size: 20px; color: #333333; margin-bottom: 16px; font-style: italic; }
+        .review-author { font-size: 13px; font-weight: 500; color: #003366; }
+        .reviews-footer { display: flex; align-items: center; gap: 16px; }
+        .reviews-note { font-size: 13px; color: #888888; }
+
+        /* ── SERVICE AREA ── */
+        .service-area { padding: 56px 40px; background: #ffffff; }
+        .service-area-inner {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 48px;
+            align-items: start;
+        }
+        .service-area-text h2 { color: #003366; margin-bottom: 16px; }
+        .service-area-text p { font-size: 20px; color: #555555; margin-bottom: 20px; }
+        .suburbs-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: #e5e5e5;
+            border: 1px solid #e5e5e5;
+        }
+        .suburb-item {
+            background: #ffffff;
+            padding: 10px 14px;
+            font-size: 13px;
+            color: #333333;
+        }
+        .suburb-item.primary { font-weight: 500; color: #003366; }
+
+        /* ── QUOTE FORM ── */
+        .quote-form { padding: 56px 40px; background: #003366; }
+        .quote-form-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: start;
+        }
+        .form-intro h2 { color: #ffffff; margin-bottom: 16px; }
+        .form-intro p { color: rgba(255,255,255,0.75); font-size: 20px; margin-bottom: 32px; }
+        .contact-options { display: flex; flex-direction: column; gap: 12px; }
+        .contact-option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px;
+            background: rgba(255,255,255,0.08);
+        }
+        .contact-option-label { font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 2px; }
+        .contact-option-value {
+            font-size: 16px;
+            font-weight: 500;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .contact-option-value:hover { text-decoration: underline; }
+        .form-card {
+            background: #ffffff;
+            padding: 36px;
+        }
+        .form-card h3 { color: #003366; margin-bottom: 4px; }
+        .form-card > p { font-size: 13px; color: #888888; margin-bottom: 24px; }
+        .form-group { margin-bottom: 16px; }
         label {
             display: block;
-            font-weight: 600;
-            font-size: 14px;
-            margin-bottom: 8px;
+            font-size: 13px;
+            font-weight: 500;
             color: #333333;
+            margin-bottom: 6px;
         }
         input, select, textarea {
             width: 100%;
-            padding: 12px 16px;
-            border: 1px solid #CCCCCC;
+            padding: 10px 14px;
+            border: 1px solid #cccccc;
             border-radius: 4px;
             font-family: 'Inter', sans-serif;
             font-size: 14px;
             color: #333333;
+            background: #ffffff;
+            appearance: none;
         }
         input:focus, select:focus, textarea:focus {
             outline: none;
-            border: 2px solid #003366;
+            border-color: #003366;
         }
-        textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
+        textarea { resize: vertical; min-height: 100px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
         .form-submit {
             width: 100%;
-            padding: 14px 32px;
+            padding: 14px;
             background: #003366;
             color: #ffffff;
             border: none;
             border-radius: 4px;
-            font-weight: 600;
-            font-size: 16px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
             cursor: pointer;
-            transition: background 0.3s ease;
+            margin-top: 4px;
         }
-        .form-submit:hover { background: #001F40; }
-        .form-reassurance {
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-            margin-top: 16px;
-        }
-        .form-ctas {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 32px;
-        }
-        .form-ctas a, .form-ctas button {
-            flex: 1;
-        }
-        .kakao-form-btn {
-            background: #FFE812;
-            color: #000000;
-            padding: 12px;
-            border: none;
-            border-radius: 4px;
-            font-weight: 600;
-            cursor: pointer;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            font-size: 14px;
-        }
-        .kakao-form-btn:hover { opacity: 0.9; }
-        
-        /* Footer */
-        footer {
-            background: #003366;
-            color: #ffffff;
-            padding: 40px 24px;
-        }
-        .footer-content {
+        .form-note { font-size: 12px; color: #aaaaaa; text-align: center; margin-top: 12px; }
+
+        /* ── FOOTER ── */
+        footer { background: #001F40; padding: 48px 40px 32px; }
+        .footer-inner {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 32px;
-            max-width: 1200px;
-            margin: 0 auto;
-            margin-bottom: 32px;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 48px;
+            max-width: 1320px;
+            margin: 0 auto 32px;
         }
-        .footer-section h3 {
-            color: #ffffff;
+        .footer-brand img { height: 140px; margin-bottom: 16px; }
+        .footer-brand p { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.7; }
+        .footer-col h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 13px;
+            color: rgba(255,255,255,0.4);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
             margin-bottom: 16px;
-            font-size: 16px;
         }
-        .footer-section p {
-            font-size: 14px;
-            margin-bottom: 12px;
-        }
-        .footer-section a {
-            color: #ffffff;
-            text-decoration: none;
+        .footer-col a, .footer-col p {
             display: block;
-            margin-bottom: 8px;
             font-size: 14px;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            margin-bottom: 8px;
+            line-height: 1.5;
         }
-        .footer-section a:hover {
-            text-decoration: underline;
-        }
+        .footer-col a:hover { color: #ffffff; }
         .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 1320px;
+            margin: 0 auto;
             padding-top: 24px;
-            text-align: center;
-            font-size: 12px;
-            color: rgba(255, 255, 255, 0.7);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
         }
-        
-        /* Mobile */
+        .footer-bottom p { font-size: 12px; color: rgba(255,255,255,0.35); }
+
+        /* ── MOBILE ── */
         @media (max-width: 768px) {
-            h1 { font-size: 36px; }
-            h2 { font-size: 24px; }
-            .header-right { flex-wrap: wrap; gap: 8px; }
-            .cta-button, .cta-secondary { padding: 10px 16px; font-size: 12px; }
-            .hero { padding: 48px 24px; }
-            .hero p { font-size: 16px; }
-            .hero-ctas { flex-direction: column; }
-            .services, .reviews, .gallery, .about, .service-area, .quote-form {
-                padding: 40px 24px;
+            h1 { font-size: 28px; }
+            h2 { font-size: 22px; }
+
+            .header-actions .btn-outline { display: none; }
+
+            .hero-inner {
+                grid-template-columns: 1fr;
+                min-height: auto;
             }
+            .hero-text { padding: 40px 24px; }
+            .hero-photo { height: 220px; border-left: none; border-top: 1px solid #e5e5e5; }
+
+            .services-grid { grid-template-columns: 1fr; gap: 16px; }
+            .service-card { border-top: none; border-left: 3px solid #FFB800; }
+
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+
+            .about-inner { grid-template-columns: 1fr; gap: 32px; }
+
+            .reviews-grid { grid-template-columns: 1fr; }
+
+            .service-area-inner { grid-template-columns: 1fr; gap: 24px; }
+            .suburbs-grid { grid-template-columns: 1fr 1fr; }
+
+            .quote-form-inner { grid-template-columns: 1fr; gap: 32px; }
             .form-card { padding: 24px; }
-            .footer-content { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+
+            .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .hero-inner { grid-template-columns: 1fr 320px; }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .reviews-grid { grid-template-columns: 1fr 1fr; }
         }
     </style>
 </head>
 <body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">Your trusted local painting solution in Ryde district &amp; North Shore, Sydney</div>
+
     <!-- Header -->
     <header>
-        <div class="header-content">
+        <div class="header-inner">
             <div class="logo">
-                <img src="logo-05.png" alt="CK Prime Paint">
+                <a href="#"><img src="Assets/logo-05.png" alt="CK Prime Paint"></a>
             </div>
-            <div class="header-right">
-                <a href="tel:0404131984" class="cta-secondary">Call 0404 131 984</a>
-                <a href="https://open.kakao.com/" class="kakao-btn" target="_blank">📱 카톡</a>
-                <a href="#quote-form" class="cta-button">Get a Free Quote</a>
+            <div class="header-actions">
+                <a href="tel:0404131984" class="btn" style="background: #003366; color: #ffffff; border: 2px solid #ffffff; font-weight: 600;">0404 131 984</a>
+                <a href="https://open.kakao.com/" class="btn btn-kakao" target="_blank" rel="noopener" style="padding: 8px 12px;">
+                    <img src="Assets/kakao-logo.png.webp" alt="KakaoTalk" style="height: 24px; width: auto; display: block;">
+                </a>
+                <a href="#quote-form" class="btn" style="background: #ffffff; color: #003366; font-weight: 600; border: 2px solid #ffffff;">Get a Free Quote</a>
             </div>
         </div>
     </header>
 
     <!-- Hero -->
     <section class="hero">
-        <div class="container">
-            <h1>Epping's meticulous house painters — done right, left spotless.</h1>
-            <p>Licensed and fully insured residential painting across Epping, Ryde and the North Shore. Free, no-obligation quotes — usually same day.</p>
-            <div class="hero-ctas">
-                <a href="#quote-form" class="cta-button">Get a Free Quote</a>
-                <a href="tel:0404131984" class="cta-button cta-secondary">Call 0404 131 984</a>
+        <div class="hero-inner container">
+            <div class="hero-text">
+                <div style="display:flex; align-items:center; gap: 14px; margin-bottom: 16px;">
+                    <div style="background: #FFB800; color: #003366; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; padding: 6px 14px; border-radius: 4px; white-space: nowrap;">10+ YEARS</div>
+                    <p class="hero-label" style="margin-bottom: 0;">Ryde &amp; North Shore Painting</p>
+                </div>
+                <h1>Chris treats every project like it's his own – that's why customers trust him.</h1>
+                <p style="font-size: 20px;">Honest local painting at a fair price. No shortcuts. We don't leave until the job is done properly.</p>
+                <div class="hero-ctas">
+                    <a href="tel:0404131984" class="btn btn-primary">Call Chris – 0404 131 984</a>
+                    <a href="https://open.kakao.com/" class="btn btn-kakao" target="_blank" rel="noopener" style="padding: 10px 16px;">
+                        <img src="Assets/kakao-logo.png.webp" alt="KakaoTalk" style="height: 34px; width: auto; display: block;">
+                    </a>
+                    <a href="#quote-form" class="btn" style="background: #ffffff; color: #003366; border: 2px solid #003366; padding: 10px 22px;">Get a Free Quote</a>
+                </div>
+                <div class="trust-row">
+                    <div class="trust-item">
+                        <span class="trust-item-dot"></span>
+                        <span>10+ years local experience</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-item-dot"></span>
+                        <span>Epping local</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-item-dot"></span>
+                        <span>Korean &amp; English speaking</span>
+                    </div>
+                </div>
             </div>
-            <div class="trust-strip">
-                <p>
-                    <span class="trust-badge">
-                        <span class="star">★</span>
-                        <span>5.0</span>
-                    </span>
-                    <span class="trust-badge">
-                        <span>✓ Fully Insured</span>
-                    </span>
-                    <span class="trust-badge">
-                        <span>📍 Epping Local</span>
-                    </span>
-                </p>
+            <div class="hero-photo">
+                <div class="hero-slides">
+                    <div class="hero-slide active"><img src="Assets/photo-1.jpg" alt="Chris painting on the job"></div>
+                    <div class="hero-slide"><img src="Assets/photo-4.jpg" alt="Chris at work on site"></div>
+                    <div class="hero-slide"><img src="Assets/photo-5.jpg" alt="Chris painting exterior"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -481,32 +614,37 @@
     <!-- Services -->
     <section class="services">
         <div class="container">
-            <h2>Our Services</h2>
+            <div class="section-header">
+                <h2>What We Do</h2>
+                <p>Residential homes and small businesses painting – inside and out.</p>
+            </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">🏠</div>
-                    <h3>Interior Painting</h3>
-                    <p>Walls, ceilings, trim and doors, prepped properly and finished clean.</p>
+                    <h3>Inside the Home</h3>
+                    <ul class="service-list">
+                        <li>Interior walls &amp; ceilings</li>
+                        <li>Trim &amp; doors</li>
+                        <li>Cabinets &amp; joinery</li>
+                        <li>Furniture painting</li>
+                        <li>Drywall repair</li>
+                    </ul>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🏘️</div>
-                    <h3>Exterior Painting</h3>
-                    <p>Weather-ready coatings that protect and lift your home's street appeal.</p>
+                    <h3>Outside the Home</h3>
+                    <ul class="service-list">
+                        <li>Exterior walls</li>
+                        <li>Roof painting</li>
+                        <li>Fences &amp; decks</li>
+                        <li>Timber staining</li>
+                        <li>Spray painting</li>
+                    </ul>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🛖</div>
-                    <h3>Roof Painting</h3>
-                    <p>Restore and protect your roof with durable, professional coatings.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🚪</div>
-                    <h3>Fences & Decks</h3>
-                    <p>Timber and fencing brought back to life and built to last.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">✨</div>
-                    <h3>Pre-Sale & End-of-Lease</h3>
-                    <p>Fast, tidy refreshes that help homes lease and sell. Agents welcome.</p>
+                    <h3>Getting Ready to Sell or Leave</h3>
+                    <ul class="service-list">
+                        <li>Pre-sale repaint</li>
+                        <li>End-of-lease repaint</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -515,15 +653,32 @@
     <!-- Gallery -->
     <section class="gallery">
         <div class="container">
-            <h2>Before & After</h2>
-            <div class="gallery-container">
-                <div class="before-after-slider">
-                    <div class="before-after-image before"></div>
-                    <div class="before-after-image after"></div>
+            <div class="gallery-intro">
+                <h2>On the Job</h2>
+                <p>Never rushed. Chris doesn't call a job done until it matches what was promised – every time.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="Assets/photo-1.jpg" alt="Chris painting exterior eaves on a ladder" loading="lazy">
                 </div>
-                <p style="text-align: center; font-size: 14px; color: #666;">
-                    Drag or tap to compare. More photos coming soon.
-                </p>
+                <div class="gallery-item">
+                    <img src="Assets/touchup.png" alt="Touch up work on site" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="Assets/photo-3.jpg" alt="Reviewing job specifications before starting" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="Assets/photo-4.jpg" alt="Meticulous surface prep and filling on exterior wall" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="Assets/photo-5.jpg" alt="Careful trim and door frame prep work" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="Assets/photo-6.jpg" alt="Detail work on exterior painting job" loading="lazy">
+                </div>
+            </div>
+            <div class="gallery-note">
+                <p>More photos on our <a href="https://maps.app.goo.gl/S1Wdo2MLqb2nWxFi6" target="_blank" rel="noopener">Google Business Profile</a> and <a href="https://www.facebook.com/people/CK-Prime-Paint/61556552408168/" target="_blank" rel="noopener">Facebook page</a>.</p>
             </div>
         </div>
     </section>
@@ -531,137 +686,292 @@
     <!-- About -->
     <section class="about">
         <div class="container">
-            <h2>Why CK Prime Paint</h2>
-            <p>CK Prime Paint is a licensed, fully insured residential painting business based in Epping, serving the Ryde district and North Shore. We specialise in interior and exterior repaints, with meticulous preparation and a clean, tidy worksite from the first drop sheet to the final coat. Every job is backed by public liability insurance, and we provide free, no-obligation on-site quotes. We treat your home like our own — on time, on budget, and finished to a standard we're proud to put our name to.</p>
+            <div class="about-inner">
+                <div class="about-text">
+                    <h2>About CK Prime Paint</h2>
+                    <p>When you call CK Prime Paint, you get Chris. He'll come out to quote it, he'll prep it, and he'll paint it himself. Just a local tradesperson who takes real pride in the work.</p>
+                    <p>Chris has been painting homes across the Ryde district and North Shore for over 10 years. Dozens of jobs – interior, exterior, roof to fence – and every single one finished to the same standard. Customers come back, and they refer their friends.</p>
+                    <p>Give your home the care it deserves with CK Prime Paint.</p>
+                </div>
+                <div class="about-points">
+                    <div class="about-point">
+                        <h3>Proper prep, every time</h3>
+                        <p>The finish is only as good as what's underneath. Chris sands, fills, and primes properly – before a single coat of paint goes on.</p>
+                    </div>
+                    <div class="about-point">
+                        <h3>Your home, treated with respect</h3>
+                        <p>Drop sheets down, everything protected. Chris takes care of your space – and always leaves it cleaner than he found it.</p>
+                    </div>
+                    <div class="about-point">
+                        <h3>Peace of mind on price</h3>
+                        <p>Budget matters. Chris quotes honestly, explains what's needed and why, and sticks to what he says. No surprises when the job is done.</p>
+                    </div>
+                    <div class="about-point">
+                        <h3>Response within 24 hours</h3>
+                        <p>Call or message and Chris gets back to you. No waiting days to hear back about a simple quote.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Reviews -->
     <section class="reviews">
         <div class="container">
-            <h2>What Our Customers Say</h2>
-            <div class="review-badge">
-                <div class="stars">★★★★★</div>
-                <p class="review-text">5.0 out of 5 on Google (7 reviews)</p>
-            </div>
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <p>"Fantastic work. Meticulous attention to detail. Highly recommended."</p>
-                    <p class="review-author">— Sarah M.</p>
-                </div>
-                <div class="review-card">
-                    <p>"Professional, reliable, and the finish is spotless. Will use again."</p>
-                    <p class="review-author">— James K.</p>
-                </div>
-                <div class="review-card">
-                    <p>"Local, honest, and they treat your home with care. Worth every cent."</p>
-                    <p class="review-author">— Emma T.</p>
+            <div class="reviews-header">
+                <h2>What Customers Say</h2>
+                <div class="reviews-score">
+                    <span class="stars">★★★★★</span>
+                    <span class="score-text">5.0 out of 5 on Google</span>
                 </div>
             </div>
-            <div class="review-btn">
-                <a href="https://google.com" class="cta-button" target="_blank">See All Reviews on Google</a>
+            <div class="reviews-carousel-wrapper">
+                <button class="carousel-arrow carousel-prev" id="carouselPrev" aria-label="Previous review">&#8592;</button>
+                <div class="reviews-carousel" id="reviewsCarousel">
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"We cannot recommend him enough. His job is flawless. The cost is very reasonable too. He takes good care of the job he does and is very trustworthy. Every time we were really impressed how nicely the jobs were done."</p>
+                        <p class="review-author">— Jupiter, Epping</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"I was very happy with the professional skills and attention to detail that Chris took with our bedroom. It now looks brand new again. I highly recommend CK Prime Paint."</p>
+                        <p class="review-author">— Mary W., Eastwood</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"He was super detail-oriented and even fixed up spots we didn't notice. I'm really happy with how everything turned out. If anyone needs painting done, I highly recommend contacting Chris."</p>
+                        <p class="review-author">— Kim, Carlingford</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"I recently had Chris paint my room and I couldn't be happier with the experience. From the start, he was quick to respond, friendly, and full of positive energy – an absolute pleasure to deal with. His work was carried out with precision, efficiency, and great attention to detail. I'm very impressed with both his professionalism and the quality of the finish."</p>
+                        <p class="review-author">— Chelsea B., Ryde</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"They did an amazing job painting my place – window frames, bathroom and kitchen cabinets which needed to be refreshed. Very happy with their workmanship. They are punctual and very pleasant to deal with. I would absolutely recommend anyone who needs painting work done."</p>
+                        <p class="review-author">— Kenny K., North Ryde</p>
+                    </div>
+                </div>
+                <button class="carousel-arrow carousel-next" id="carouselNext" aria-label="Next review">&#8594;</button>
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+            <div class="reviews-footer" style="margin-top: 28px;">
+                <a href="https://maps.app.goo.gl/S1Wdo2MLqb2nWxFi6" class="btn btn-outline" target="_blank" rel="noopener">See All Reviews on Google</a>
             </div>
         </div>
     </section>
+    <script>
+        (function() {
+            const slides = document.querySelectorAll('.hero-slide');
+            let idx = 0;
+            setInterval(() => {
+                slides[idx].classList.remove('active');
+                idx = (idx + 1) % slides.length;
+                slides[idx].classList.add('active');
+            }, 3000);
+        })();
+    </script>
+    <script>
+        (function() {
+            const carousel = document.getElementById('reviewsCarousel');
+            const dotsContainer = document.getElementById('carouselDots');
+            const prevBtn = document.getElementById('carouselPrev');
+            const nextBtn = document.getElementById('carouselNext');
+            const cards = carousel.querySelectorAll('.review-card');
+            let current = 0;
+            let timer;
+
+            cards.forEach((_, i) => {
+                const dot = document.createElement('button');
+                dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+                dot.addEventListener('click', () => goTo(i));
+                dotsContainer.appendChild(dot);
+            });
+
+            function goTo(n) {
+                current = (n + cards.length) % cards.length;
+                carousel.scrollTo({ left: cards[current].offsetLeft, behavior: 'smooth' });
+                dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) => d.classList.toggle('active', i === current));
+                resetTimer();
+            }
+
+            prevBtn.addEventListener('click', () => goTo(current - 1));
+            nextBtn.addEventListener('click', () => goTo(current + 1));
+
+            function resetTimer() { clearInterval(timer); timer = setInterval(() => goTo(current + 1), 5000); }
+
+            resetTimer();
+        })();
+    </script>
 
     <!-- Service Area -->
     <section class="service-area">
         <div class="container">
-            <h2>Service Area</h2>
-            <p>We specialise in the Epping and Ryde district across the North Shore.</p>
-            <div class="suburbs-list">
-                <p>Epping · North Epping · Eastwood · Marsfield · Denistone East · Carlingford · Beecroft · Cheltenham · Ryde · West Ryde · North Ryde · Macquarie Park · Dundas Valley · Ermington · Meadowbank · Pennant Hills · West Pennant Hills · Chatswood · Killara · Turramurra</p>
+            <div class="service-area-inner">
+                <div class="service-area-text">
+                    <h2>Service Area</h2>
+                    <p>Based in Epping, Chris paints homes across the Ryde district and North Shore. Not sure if we cover your area? Just ask.</p>
+                    <a href="#quote-form" class="btn btn-primary">Get a Quote</a>
+                </div>
+                <div>
+                    <div class="suburbs-grid">
+                        <div class="suburb-item primary">Epping</div>
+                        <div class="suburb-item primary">Eastwood</div>
+                        <div class="suburb-item primary">Carlingford</div>
+                        <div class="suburb-item primary">Ryde</div>
+                        <div class="suburb-item primary">Chatswood</div>
+                        <div class="suburb-item primary">North Ryde</div>
+                    </div>
+                    <div id="moreSuburbs" style="display:none;">
+                        <div class="suburbs-grid" style="margin-top: 12px;">
+                            <div class="suburb-item">North Epping</div>
+                            <div class="suburb-item">Marsfield</div>
+                            <div class="suburb-item">Denistone East</div>
+                            <div class="suburb-item">Beecroft</div>
+                            <div class="suburb-item">Cheltenham</div>
+                            <div class="suburb-item">West Ryde</div>
+                            <div class="suburb-item">Macquarie Park</div>
+                            <div class="suburb-item">Dundas Valley</div>
+                            <div class="suburb-item">Ermington</div>
+                            <div class="suburb-item">Meadowbank</div>
+                            <div class="suburb-item">Pennant Hills</div>
+                            <div class="suburb-item">West Pennant Hills</div>
+                            <div class="suburb-item">Killara</div>
+                            <div class="suburb-item">Turramurra</div>
+                            <div class="suburb-item">Parramatta</div>
+                        </div>
+                    </div>
+                    <button id="toggleSuburbs" onclick="var m=document.getElementById('moreSuburbs'); var open=m.style.display==='block'; m.style.display=open?'none':'block'; this.textContent=open?'+ See all suburbs':'− Show less';" style="margin-top: 16px; background: none; border: none; color: #003366; font-size: 16px; font-weight: 500; cursor: pointer; padding: 0; text-decoration: underline;">+ See all suburbs</button>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Quote Form -->
-<section class="quote-form" id="quote-form">
-    <div class="container">
-        <div class="form-card">
-            <h2>Get a Free Quote</h2>
-            <p class="form-intro">Tell us about your project — usually same-day response, free, no obligation.</p>
-            
-            <div class="form-ctas">
-                <a href="tel:0404131984" class="cta-button">Call 0404 131 984</a>
-                <button class="kakao-form-btn" onclick="window.open('https://open.kakao.com/', '_blank')">📱 카카오톡</button>
+    <section class="quote-form" id="quote-form">
+        <div class="container">
+            <div class="quote-form-inner">
+                <div class="form-intro">
+                    <h2>Get a Free Quote</h2>
+                    <p>Call Chris for a free, no-obligation on-site quote. We aim to respond within 24 hours – just reach out and he'll take it from there.</p>
+                    <div class="contact-options">
+                        <div class="contact-option">
+                            <div>
+                                <div class="contact-option-label">Phone</div>
+                                <a href="tel:0404131984" class="contact-option-value">0404 131 984</a>
+                            </div>
+                        </div>
+                        <div class="contact-option">
+                            <div>
+                                <div class="contact-option-label">Hours</div>
+                                <span class="contact-option-value" style="cursor: default;">8am – 7pm, 7 days</span>
+                            </div>
+                        </div>
+                        <div class="contact-option">
+                            <div>
+                                <div class="contact-option-label">KakaoTalk (카카오톡)</div>
+                                <a href="https://open.kakao.com/" class="contact-option-value" target="_blank" rel="noopener">메시지 보내기 →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-card">
+                    <h3>Send a Quote Request</h3>
+                    <p>We aim to respond within 24 hours.</p>
+                    <form action="https://formspree.io/f/xbdvdjql" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="04xx xxx xxx">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="suburb">Suburb *</label>
+                                <select id="suburb" name="suburb" required>
+                                    <option value="">Select suburb...</option>
+                                    <option value="Epping">Epping</option>
+                                    <option value="North Epping">North Epping</option>
+                                    <option value="Eastwood">Eastwood</option>
+                                    <option value="Marsfield">Marsfield</option>
+                                    <option value="Denistone East">Denistone East</option>
+                                    <option value="Carlingford">Carlingford</option>
+                                    <option value="Beecroft">Beecroft</option>
+                                    <option value="Cheltenham">Cheltenham</option>
+                                    <option value="Ryde">Ryde</option>
+                                    <option value="West Ryde">West Ryde</option>
+                                    <option value="North Ryde">North Ryde</option>
+                                    <option value="Macquarie Park">Macquarie Park</option>
+                                    <option value="Dundas Valley">Dundas Valley</option>
+                                    <option value="Ermington">Ermington</option>
+                                    <option value="Meadowbank">Meadowbank</option>
+                                    <option value="Pennant Hills">Pennant Hills</option>
+                                    <option value="West Pennant Hills">West Pennant Hills</option>
+                                    <option value="Chatswood">Chatswood</option>
+                                    <option value="Killara">Killara</option>
+                                    <option value="Turramurra">Turramurra</option>
+                                    <option value="Parramatta">Parramatta</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="job-type">Job Type *</label>
+                                <select id="job-type" name="job_type" required>
+                                    <option value="">Select type...</option>
+                                    <option value="Interior">Interior Painting</option>
+                                    <option value="Exterior">Exterior Painting</option>
+                                    <option value="Roof">Roof Painting</option>
+                                    <option value="Fences & Decks">Fences &amp; Decks</option>
+                                    <option value="Pre-Sale">Pre-Sale Repaint</option>
+                                    <option value="End-of-Lease">End-of-Lease</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">About Your Project *</label>
+                            <textarea id="message" name="message" required placeholder="Tell us what you're after – size, scope, timing, anything that helps."></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">Send Quote Request</button>
+                        <p class="form-note">No spam. We'll only use this to follow up on your quote.</p>
+                    </form>
+                </div>
             </div>
-            
-            <form action="https://formspree.io/f/xbdvdjql" method="POST">
-                <div class="form-group">
-                    <label for="name">Full Name *</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number *</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="suburb">Suburb *</label>
-                    <select id="suburb" name="suburb" required>
-                        <option value="">Select a suburb...</option>
-                        <option value="Epping">Epping</option>
-                        <option value="North Epping">North Epping</option>
-                        <option value="Eastwood">Eastwood</option>
-                        <option value="Marsfield">Marsfield</option>
-                        <option value="Carlingford">Carlingford</option>
-                        <option value="Ryde">Ryde</option>
-                        <option value="West Ryde">West Ryde</option>
-                        <option value="North Ryde">North Ryde</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="job-type">Job Type *</label>
-                    <select id="job-type" name="job_type" required>
-                        <option value="">Select a job type...</option>
-                        <option value="Interior">Interior Painting</option>
-                        <option value="Exterior">Exterior Painting</option>
-                        <option value="Roof">Roof Painting</option>
-                        <option value="Fences">Fences & Decks</option>
-                        <option value="Pre-Sale">Pre-Sale Repaint</option>
-                        <option value="End-of-Lease">End-of-Lease</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">Tell us about your project *</label>
-                    <textarea id="message" name="message" required placeholder="Describe your painting project..."></textarea>
-                </div>
-                <button type="submit" class="form-submit">Get Your Free Quote</button>
-                <p class="form-reassurance">Privacy protected. We'll only use this to contact you about your quote.</p>
-            </form>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Phone: <a href="tel:0404131984">0404 131 984</a></p>
-                <p>Hours: 8am – 7pm</p>
-                <p>Location: Epping NSW 2121</p>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="Assets/logo-05.png" alt="CK Prime Paint">
+                <p>Chris Kwon – residential painting.<br>Epping, NSW 2121.<br>Serving the Ryde district &amp; North Shore for 10+ years.</p>
             </div>
-            <div class="footer-section">
-                <h3>Connect</h3>
-                <a href="https://google.com" target="_blank">Google Business Profile</a>
-                <a href="https://facebook.com" target="_blank">Facebook</a>
-                <a href="https://open.kakao.com/" target="_blank">카카오톡 (KakaoTalk)</a>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="tel:0404131984">0404 131 984</a>
+                <p>8am – 7pm, 7 days</p>
+                <a href="https://open.kakao.com/" target="_blank" rel="noopener">카카오톡 (KakaoTalk)</a>
             </div>
-            <div class="footer-section">
-                <h3>Legal</h3>
-                <a href="#privacy">Privacy Policy</a>
-                <p style="font-size: 12px; margin-top: 16px;">ABN: [ABN]<br>Fully Insured</p>
+            <div class="footer-col">
+                <h4>Links</h4>
+                <a href="https://maps.app.goo.gl/S1Wdo2MLqb2nWxFi6" target="_blank" rel="noopener">Google Business Profile</a>
+                <a href="https://www.facebook.com/people/CK-Prime-Paint/61556552408168/" target="_blank" rel="noopener">Facebook</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 CK Prime Paint. All rights reserved.</p>
+            <p>&copy; 2026 CK Prime Paint. ABN 18 267 626 390.</p>
+            <p>Epping NSW 2121</p>
         </div>
     </footer>
 
@@ -671,22 +981,26 @@
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "CK Prime Paint",
-        "image": "logo-05.png",
-        "description": "Licensed, fully insured house painters in Epping and the Ryde district.",
+        "image": "https://ckprimepaint.com.au/logo-05.png",
+        "description": "Fully insured residential house painters in Epping and the Ryde district. Interior, exterior, roof and pre-sale repaints.",
         "url": "https://ckprimepaint.com.au",
-        "telephone": "0404131984",
+        "telephone": "+61404131984",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Epping",
             "addressLocality": "Epping",
             "addressRegion": "NSW",
             "postalCode": "2121",
             "addressCountry": "AU"
         },
+        "identifier": {
+            "@type": "PropertyValue",
+            "name": "ABN",
+            "value": "18 267 626 390"
+        },
         "priceRange": "$$",
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
             "opens": "08:00",
             "closes": "19:00"
         },
@@ -695,19 +1009,19 @@
             "ratingValue": "5.0",
             "reviewCount": "7"
         },
-        "areaServed": {
-            "@type": "City",
-            "name": "Epping, Ryde, North Shore Sydney"
-        },
+        "areaServed": [
+            "Epping", "North Epping", "Eastwood", "Marsfield", "Denistone East",
+            "Carlingford", "Beecroft", "Cheltenham", "Ryde", "West Ryde",
+            "North Ryde", "Macquarie Park", "Dundas Valley", "Ermington",
+            "Meadowbank", "Pennant Hills", "West Pennant Hills", "Chatswood",
+            "Killara", "Turramurra", "Parramatta"
+        ],
         "sameAs": [
-            "https://google.com",
-            "https://facebook.com"
+            "https://maps.app.goo.gl/S1Wdo2MLqb2nWxFi6",
+            "https://www.facebook.com/people/CK-Prime-Paint/61556552408168/"
         ]
     }
     </script>
-
-    <!-- Sitemap.xml reference -->
-    <!-- Generate sitemap.xml separately or add robots.txt reference -->
 
 </body>
 </html>
