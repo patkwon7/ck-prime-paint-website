@@ -510,41 +510,80 @@
         /* ── MOBILE ── */
         @media (max-width: 768px) {
             h1 { font-size: 28px; }
-            h2 { font-size: 22px; }
+            h2 { font-size: 24px; }
+            h3 { font-size: 20px; }
+            p  { font-size: 17px; }
 
-            .header-actions .btn-outline { display: none; }
+            .container { padding: 0 20px; }
 
+            /* Top bar */
+            .top-bar { font-size: 12px; padding: 8px 16px; }
+
+            /* Header */
+            .header-inner { padding: 10px 16px; }
+            .logo img { height: 72px; }
+            .header-actions { gap: 8px; }
+            .header-actions .btn { font-size: 12px; padding: 8px 10px; }
+            .header-actions .btn:last-child { display: none; } /* hide Get a Free Quote on mobile */
+
+            /* Hero */
             .hero-inner {
                 grid-template-columns: 1fr;
                 min-height: auto;
             }
-            .hero-text { padding: 40px 24px; }
-            .hero-photo { height: 220px; border-left: none; border-top: 1px solid #e5e5e5; }
+            .hero-text { padding: 36px 20px 32px; }
+            .hero-label { font-size: 11px; white-space: normal; }
+            .hero-text h1 { font-size: 26px; }
+            .hero-text p { font-size: 16px; }
+            .hero-ctas { flex-direction: column; align-items: flex-start; gap: 10px; }
+            .hero-ctas .btn { width: 100%; text-align: center; }
+            .trust-row { gap: 12px; }
+            .trust-item { font-size: 15px; }
+            .hero-photo { height: 260px; }
+            .hero-photo::before { display: none; }
 
+            /* Services */
+            .services { padding: 40px 20px; }
             .services-grid { grid-template-columns: 1fr; gap: 16px; }
             .service-card { border-top: none; border-left: 3px solid #FFB800; }
 
-            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            /* Gallery */
+            .gallery { padding: 40px 20px; }
+            .gallery-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
 
-            .about-inner { grid-template-columns: 1fr; gap: 32px; }
+            /* About */
+            .about { padding: 40px 20px; }
+            .about-inner { grid-template-columns: 1fr; gap: 28px; }
+            .about-points { grid-template-columns: 1fr; }
 
-            .reviews-grid { grid-template-columns: 1fr; }
+            /* Reviews */
+            .reviews { padding: 40px 20px; }
+            .carousel-prev { left: -12px; }
+            .carousel-next { right: -12px; }
 
+            /* Service area */
+            .service-area { padding: 40px 20px; }
             .service-area-inner { grid-template-columns: 1fr; gap: 24px; }
             .suburbs-grid { grid-template-columns: 1fr 1fr; }
 
+            /* Quote form */
+            .quote-form { padding: 40px 20px; }
             .quote-form-inner { grid-template-columns: 1fr; gap: 32px; }
-            .form-card { padding: 24px; }
+            .form-card { padding: 20px; }
             .form-row { grid-template-columns: 1fr; }
 
-            .footer-inner { grid-template-columns: 1fr; gap: 32px; }
-            .footer-bottom { flex-direction: column; text-align: center; }
+            /* Footer */
+            footer { padding: 36px 20px 24px; }
+            .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+            .footer-brand img { height: 80px; }
+            .footer-bottom { flex-direction: column; text-align: center; gap: 4px; }
         }
 
         @media (min-width: 769px) and (max-width: 1024px) {
             .hero-inner { grid-template-columns: 1fr 320px; }
             .services-grid { grid-template-columns: repeat(2, 1fr); }
-            .reviews-grid { grid-template-columns: 1fr 1fr; }
+            .about-inner { grid-template-columns: 1fr; gap: 32px; }
+            .about-points { grid-template-columns: 1fr 1fr; }
         }
     </style>
 </head>
